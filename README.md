@@ -1,29 +1,75 @@
-# Bot-Battlr
+# Bot Battlr
 
-Bot Battlr is a React application that allows users to browse, view details, enlist, and discharge bots from their army. The app fetches data from a local JSON server and provides sorting and filtering functionalities.
+Bot Battlr is a React app where you can build and manage your own army of bots.
 
 ## Features
 
-- View a collection of bots
-- Enlist bots to your army
-- Release bots from your army
-- Discharge bots from the server
-- Sort bots by health, damage, or armor
-- Filter bots by class
+- View all bots.
+- Enlist bots into your army.
+- Release bots from your army.
+- Discharge bots permanently.
 
-## Setup
+### Prerequisites
+- Node.js and npm installed.
 
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Install dependencies: `npm install`
-4. Start the JSON server: `json-server --watch db.json --port 8001`
-5. Start the React app: `npm start`
+### Installation
 
-## Endpoints
+1. Clone the Repository
 
-- GET /bots
-- DELETE /bots/:id
+    git clone git@github.com:CISSEJACKA/Bot-Battlr.git
+
+
+2. Install Dependencies
+    npm install
+    
+
+3. Set Up JSON Server
+    - Create a `db.json` file in the project root with the following content:
+      
+      {
+        "bots": [
+          {
+            "id": 101,
+            "name": "wHz-93",
+            "health": 94,
+            "damage": 20,
+            "armor": 63,
+            "bot_class": "Support",
+            "catchphrase": "1010010101001101100011000111101",
+            "avatar_url": "https://robohash.org/nostrumrepellendustenetur.png?size=300x300&set=set1"
+          },
+          {
+            "id": 102,
+            "name": "RyM-66",
+            "health": 86,
+            "damage": 36,
+            "armor": 77,
+            "bot_class": "Medic",
+            "catchphrase": "0110011100000100011110100110011000011001",
+            "avatar_url": "https://robohash.org/quidemconsequaturaut.png?size=300x300&set=set1"
+          }
+        ]
+      }
+      ```
+
+4. Run JSON Server
+    npx json-server db.json --port 8001
+    
+
+5. Start the React App
+    npm start
+    
+
+## Usage
+
+- View bots on the main page.
+- Click a bot to enlist it into your army.
+- Click a bot in your army to release it.
+- Click the red "x" to discharge a bot permanently.
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
+
+
+
