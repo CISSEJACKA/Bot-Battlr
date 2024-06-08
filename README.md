@@ -53,8 +53,8 @@ Bot Battlr is a React app where you can build and manage your own army of bots.
       ```
 
 4. Run JSON Server
-    npx json-server db.json --port 8001
-    
+ json-server --watch db.json
+
 
 5. Start the React App
     npm start
