@@ -1,14 +1,12 @@
 import React from 'react';
-import BotCard from './BotCard';
 
-const YourBotArmy = ({ army, releaseBot, dischargeBot }) => {
+function YourBotArmy() {
   return (
-    <div>
-      {army.map(bot => (
-        <BotCard key={bot.id} bot={bot} handleClick={() => releaseBot(bot)} handleDelete={() => dischargeBot(bot)} />
-      ))}
+    <div className="your-bot-army">
+      {/* Render enlisted bots here */}
     </div>
   );
-};
+}
 
 export default YourBotArmy;
+

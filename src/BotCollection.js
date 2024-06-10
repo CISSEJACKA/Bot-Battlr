@@ -1,14 +1,12 @@
 import React from 'react';
-import BotCard from './BotCard';
 
-const BotCollection = ({ bots, enlistBot }) => {
+function BotCollection() {
   return (
-    <div>
-      {bots.map(bot => (
-        <BotCard key={bot.id} bot={bot} handleClick={() => enlistBot(bot)} />
-      ))}
+    <div className="bot-collection">
+      {/* Render all bots here */}
     </div>
   );
-};
+}
 
 export default BotCollection;
+
